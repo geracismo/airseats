@@ -1,0 +1,142 @@
+:root {
+    --primary: #1e90ff;
+    --secondary: #7fc8f8;
+    --requested: #ffe45e;
+    --occupied: #ff6392;
+    --available: #f9f9f9;
+    --text: #394867;
+}
+
+@font-face {
+    font-family: 'AirSeatsFontRegular';
+    src: url('./assets/fonts/Roboto_Condensed/RobotoCondensed-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'AirSeatsFontRegular';
+    src: url('./assets/fonts/Roboto_Condensed/RobotoCondensed-Light.ttf');
+    font-weight: lighter;
+}
+
+@font-face {
+    font-family: 'AirSeatsFontRegular';
+    src: url('./assets/fonts/Roboto_Condensed/RobotoCondensed-Bold.ttf');
+    font-weight: bold;
+}
+
+* {
+    font-family: monospace;
+    color: var(--text);
+}
+
+html,
+body {
+    margin: 0;
+    height: 100%;
+    min-height: 100%;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.header {
+    background-color: var(--secondary);
+    color: var(--text);
+    height: 80px;
+}
+
+.login-label {
+    font-size: x-large;
+}
+
+.login-form {
+    margin-top: 15rem;
+}
+
+
+
+.seat:hover {
+    fill: var(--requested);
+    cursor: pointer;
+}
+
+.airplane-row,
+.row-label {
+    height: 33px;
+}
+
+.col-label {
+    width: 25px;
+}
+
+.h-5 {
+    height: 5% !important;
+}
+
+.h-10 {
+    height: 10% !important;
+}
+
+.h-15 {
+    height: 15% !important;
+}
+
+.border-primary {
+    border: #1e90ff;
+    --bs-border-opacity: 1;
+}
+
+.border-requested {
+    border: 2px solid var(--requested);
+}
+
+.color-secondary {
+    background-color: var(--secondary);
+    border-color: var(--secondary);
+}
+
+.color-primary {
+    background-color: var(--primary);
+    border-color: var(--primary);
+}
+
+.req-seat-row {
+    border-left: 4px solid var(--requested) !important;
+    border-bottom: 1px solid grey;
+    border-right: 1px solid grey;
+}
+.bok-seat-row {
+    border-left: 4px solid var(--occupied) !important;
+    border-bottom: 1px solid grey;
+    border-right: 1px solid grey;
+}
+
+.icon-req-seats-table {
+    width: 40px;
+    height: 40px;
+    background-color: #1e90ff;
+}
+
+.requested {
+    fill: var(--requested);
+}
+
+.occupied {
+    fill: var(--occupied);
+}
+
+.available {
+    fill: var(--primary);
+}
+
+.delete-button { 
+    background-color: var(--occupied);
+    border: var(--occupied) 2px solid;
+    margin-left: 1.5rem;
+}
+.book-button { 
+    background-color: var(--primary);
+    border: var(--primary) 2px solid;
+    margin-left: 1.5rem;
+}
